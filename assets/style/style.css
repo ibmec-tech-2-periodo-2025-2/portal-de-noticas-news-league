@@ -20,17 +20,24 @@ section{
     /* display: grid;
     place-items: center;
     position: absolute; */
-    background-color: aquamarine;
+    margin: 60vh;
+    margin-top: 60vh;
+    width: 600px;         /* largura da div */
+    height: auto;         /* altura vai se ajustar se não definir */
+    overflow: hidden;     /* esconde o que ultrapassar, se necessário */
+    display: flex;        /* se quiser centralizar com flexbox */
 }
 
 .titulo{
     width: 100vw;
     height: 20vh;
     overflow-wrap: break-word;
+    margin-top: -5vh;
 }
 .subtitulo{
     width: 100vw;
     height: 20vh;
+    margin-top: -10vh;
 }
 
 .noticia{
@@ -93,7 +100,13 @@ div{
     align-items: center;
     flex-direction: column;
     gap: 10px;
-}
-.rodape2{
     
+}
+
+.imagem{
+   
+  width: 100%;          
+  height: auto;         /* mantém a proporção da imagem */
+  border-radius: 5px;   /* borda arredondada, se quiser */
+  object-fit: cover;    /* se quiser que a imagem corte para preencher completamente */
 }
