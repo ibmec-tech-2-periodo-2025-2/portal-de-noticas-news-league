@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+
+}
+
+header {
+    background-color: #1C2C4E ;
+    height: 70px;
+    width: 100%;
+
+}
+.barrascroll {
+    display: grid;
+    
+    grid-template-columns: 150px 2fr 1fr 150px;
+    grid-auto-rows: minmax(200px, auto);
+    grid-template-areas: 
+    ". not1 not1 ."
+    ". not1 not1 ."
+    ". not1 not1 ."
+    ". . . ."
+    ". not2 not3 ."
+    ". not2 not3 ."
+    ". . . ."
+    ". . . .";
+    margin-top: 50px;
+}
+
+
+.not1{
+    grid-area: not1;
+    border-radius: 13px;
+    background-color: rgb(0, 35, 151); 
+}
+
+.not2{
+    grid-area: not2;
+    border-radius: 13px;
+    background-color: rgb(127, 127, 127);
+    margin-top: 50px;
+}
+
+.not3{
+    grid-area: not3;
+    border-radius: 13px;
+    background-color: rgb(0, 8, 98);
+    margin-top: 50px;
+}
+
+ .noticia2 {
+    height: 200px;
+    width: 100%;
+    border-bottom: 1px solid black;
+ }
+
+ .noticia1 {
+    border-radius: 13px;
+    height: 100%;
+    width: 100%;
+ }
+
+ .foto {
+    margin: 20px;
+    border-radius: 10px;
+    background-color: aqua;
+    height: 160px;
+    width: 40%;
+ }
+
+
+
+
+
