@@ -15,8 +15,33 @@ body {
 
 header {
     background-color: #1C2C4E ;
-    height: 70px;
+    height: 120px;
     width: 100%;
+    color: rgb(229, 229, 229);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+
+}
+
+footer{
+    background-color: #1C2C4E ;
+    height: 120px;
+    width: 100%;
+    color: rgb(229, 229, 229);
+
+}
+
+.logo{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    width: 100px;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
 
 }
 .barrascroll {
@@ -46,7 +71,7 @@ header {
 .not2{
     grid-area: not2;
     border-radius: 13px;
-    background-color: rgb(127, 127, 127);
+    background-color: rgb(227, 227, 227);
     margin-top: 50px;
 }
 
