@@ -77,14 +77,15 @@ section {
     }
 
     .titulo {
-        font-size: 1.5rem;
+        font-size: 1.5rem;;
     }
 }
 
 .subtitulo{
-    width: 100vw;
+    display: flex;
+    justify-content: center;
+    width: 80vw;
     height: 20vh;
-    margin-top: -10vh;
 }
 
 .noticia{
