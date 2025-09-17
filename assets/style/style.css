@@ -1,39 +1,86 @@
-*{
+/* Reset básico */
+* {
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
-    margin: 0;
 }
 
-body{
-    width: 100vh;
+body {
+    font-family: 'Mulish', sans-serif;
+    background-color: #f4f4f9; /* Fundo claro e agradável */
+    color: #333; /* Cor do texto */
+    width: 100vw;
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
 }
 
-section{
-    width: 100vh;
-    height: 100vh;
-    margin: 20px;
+/* Estilo do cabeçalho */
+header {
+    width: 100%;
+    height: 15vh;
+    background-color: #1D3C78; /* Cor de destaque */
+    color: #fff;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: Mulish;
-    /* display: grid;
-    place-items: center;
-    position: absolute; */
-    margin: 60vh;
-    margin-top: 60vh;
-    width: 600px;         /* largura da div */
-    height: auto;         /* altura vai se ajustar se não definir */
-    overflow: hidden;     /* esconde o que ultrapassar, se necessário */
-    display: flex;        /* se quiser centralizar com flexbox */
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.titulo{
-    width: 100vw;
-    height: 20vh;
-    overflow-wrap: break-word;
-    margin-top: -5vh;
+/* Estilo principal */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 2rem;
 }
+
+/* Seções */
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border-radius: 8px; /* Mantém as bordas arredondadas */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Mantém a sombra para destaque */
+    width: 90%;
+    max-width: 600px;
+    padding: 1.5rem;
+    margin: 1rem 0;
+    overflow: hidden;
+}
+
+/* Títulos */
+.titulo {
+    width: 100%;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #1D3C78;
+    margin-bottom: 1rem;
+    word-wrap: break-word;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    section {
+        width: 95%;
+        padding: 1rem;
+    }
+
+    .titulo {
+        font-size: 1.5rem;
+    }
+}
+
 .subtitulo{
     width: 100vw;
     height: 20vh;
@@ -49,10 +96,6 @@ section{
   padding: 20px;
   box-sizing: border-box;
    
-}
-
-header{
-    margin-bottom: 0;
 }
 
 .cabecalho{
@@ -80,18 +123,31 @@ header{
     height: 10vh;
 }
 
-/* .rodape2{
-    background-color:  #1D3C78;
-    position: fixed;
-    z-index: 100;
-    bottom: 10px;
-    color: white;
-    width: 100vw;
+footer.rodape {
+    background-color: #1D3C78; /* Cor de fundo do rodapé */
+    color: #fff; /* Cor do texto */
+    text-align: center;
+    padding: 1.5rem 0;
+    font-size: 0.9rem;
+}
+
+footer .rodape-links {
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: 40vh;
-} */
+    gap: 2rem; /* Espaçamento entre os links */
+    padding-left: 10px;
+}
+
+footer .rodape-links a {
+    color: #fff; /* Cor dos links */
+    text-decoration: none; /* Remove o sublinhado */
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+footer .rodape-links a:hover {
+    color: #797979; /* Cor ao passar o mouse */
+}
 
 div{
     font-family: Mulish;
@@ -109,4 +165,12 @@ div{
   height: auto;         /* mantém a proporção da imagem */
   border-radius: 5px;   /* borda arredondada, se quiser */
   object-fit: cover;    /* se quiser que a imagem corte para preencher completamente */
+}
+
+/* Imagens */
+img {
+    max-width: 100%; /* Garante que a imagem não ultrapasse o tamanho do container */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 8px; /* Adiciona bordas arredondadas às imagens */
+    margin-top: 1rem;
 }
