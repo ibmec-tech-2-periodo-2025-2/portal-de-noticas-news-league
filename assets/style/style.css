@@ -13,6 +13,7 @@ body {
 
     max-width: 100%;
 
+    background-color: #ffffff;
 
 }
 
@@ -22,10 +23,12 @@ header {
     width: 100%;
     color: rgb(229, 229, 229);
     display: flex;
-    justify-content: center;
+    justify-content: st;
     align-items: center;
     position: sticky;
     top: 0px;
+    z-index: 2;
+    font-size: 20px;
 
 }
 
@@ -37,9 +40,19 @@ footer{
 
 }
 
+.title{
+    font-size: 80px;
+    color: rgb(255, 255, 255);
+}
+
+.link-head{
+    margin: 150px;
+}
+
 .logo{
-    margin: 0;
+    margin: 15px;
     padding: 0;
+    left: 0;
     display: flex;
     width: 100px;
     height: 100px;
@@ -76,12 +89,31 @@ footer{
 
 .not1{
     grid-area: not1;
-    border-radius: 13px;
-    background-color: rgb(46, 70, 151); 
-    background-image: url("/assets/img/imgpremicao.jpg");
+    border-radius: 20px;
+    background-color: rgb(255, 0, 0); 
+    background-image: url("/assets/img/agente-da-policia-federal-1745881253445_v2_900x506.jpg");
+    background-size: cover;
+    opacity: 0.9;
+    z-index: 1;
     
 }
 
+.t1{
+    position: absolute;
+
+    bottom: 40px;
+    left: 190px;
+}
+
+.st1{
+    position: absolute;
+
+    bottom: 15px;
+    left: 210px;
+    font-size: 17px;
+    
+
+}
 .not2{
     grid-area: not2;
     border-radius: 13px;
@@ -107,13 +139,13 @@ footer{
 
  
  .noticia1 {
-    
-    display: flex;
+    position: relative;
+    display: grid;
     border-radius: 13px;
     height: 100%;
     width: 100%;
-    position: relative;
     background-image: url("./assets/img/imgpremicao.jpg");
+
 }
  
 
@@ -125,7 +157,7 @@ footer{
     width: 40%;
  }
 
-  .noticia1 h1 {
+  .noticia1{
     position: absolute;
     bottom: 10px;
     right: 20px;
