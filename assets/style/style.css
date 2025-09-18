@@ -130,6 +130,7 @@ footer{
 }
 
  .noticia2 {
+    display: flex;
     height: 200px;
     width: 100%;
     border-bottom: 1px solid rgb(0, 0, 0, 0.15);
@@ -166,7 +167,11 @@ footer{
  }
  
 
-
+.sub-tit2{
+    position: relative;
+    top: 60px;
+    right: 175px;
+}
 
 
 
