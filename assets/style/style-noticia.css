@@ -1,0 +1,106 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+/* Estilo geral */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #1C2C4E;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #80cbc4;
+}
+
+/* Centralizar logo e textos no cabeçalho */
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header-container img {
+    height: 50px;
+    width: auto;
+    margin-right: 20px;
+}
+
+.header-container ul {
+    display: flex;
+    gap: 20px;
+}
+
+/* Conteúdo principal */
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #f9f9f9;
+}
+
+main article {
+    background: #fff;
+    margin-bottom: 20px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+main article h1 {
+    font-size: 1.8rem;
+    color: #004d40;
+    margin-bottom: 10px;
+}
+
+main article p {
+    margin-bottom: 15px;
+}
+
+main article img {
+    max-width: 100%;
+    height: auto;
+    margin: 15px 0;
+    border-radius: 8px;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    background-color: #1C2C4E;
+    color: #fff;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+footer p {
+    font-size: 0.9rem;
+}
+
