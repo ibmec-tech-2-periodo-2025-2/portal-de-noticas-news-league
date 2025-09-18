@@ -4,8 +4,7 @@
     box-sizing: border-box;
 }
 
-body {
-    
+body { 
     margin: 0;
     padding: 0;
     height: 100vh;
@@ -14,6 +13,7 @@ body {
     max-width: 100%;
 
     background-color: #ffffff;
+
 
 }
 
@@ -37,6 +37,7 @@ footer{
     height: 120px;
     width: 100%;
     color: rgb(229, 229, 229);
+    
 
 }
 
@@ -66,14 +67,15 @@ footer{
     top: 10px;
     width: 50px;
     height: 50px;
+
 }
 
 
 .barrascroll {
     display: grid;
     
-    grid-template-columns: 150px 2fr 1fr 150px;
-    grid-auto-rows: minmax(200px, auto);
+    grid-template-columns: 100px 2fr 1fr 100px;
+    grid-auto-rows: minmax(175px, auto);
     grid-template-areas: 
     ". not1 not1 ."
     ". not1 not1 ."
@@ -115,6 +117,7 @@ footer{
     bottom: 15px;
     left: 210px;
     font-size: 17px;
+
     
 
 }
@@ -136,6 +139,7 @@ footer{
     margin-top: 50px;
 }
 
+
 .not3{
     grid-area: not3;
     border-radius: 13px;
@@ -143,6 +147,14 @@ footer{
     margin-top: 50px;
     margin-left: 50px;
 }
+.noticia3 {
+
+    height: 100%;
+    width: 100%;
+    
+
+    
+ }
 
  .noticia2 {
     display: flex;
@@ -156,9 +168,6 @@ footer{
     transition: all 150ms ease-in-out;
     
  }
-
-
-
  .noticia1 {
     position: relative;
     display: grid;
@@ -168,6 +177,7 @@ footer{
     background-image: url("./assets/img/imgpremicao.jpg");
 
 }
+
  
 
  .foto {
@@ -179,6 +189,7 @@ footer{
 
     transition: all 300ms ease-in-out;
  }
+ 
 
 .foto:hover{
 
@@ -189,13 +200,74 @@ footer{
 }
   .noticia1{
     position: absolute;
-    bottom: 10px;
-    right: 20px;
+    bottom: 0;
+    right: 0;
     color: white;
+    text-shadow: black 2px 2px 30px;
     
  }
- 
 
+
+
+
+ 
+ a {
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+ }
+
+
+
+
+
+@media screen and (max-width: 500px ) {
+
+body {
+    background-color: rgb(231, 231, 231);
+
+}
+
+.logo {
+    margin: 0;
+    padding: 0;
+    width: 50px;
+    height: 50px;
+}
+
+header {
+    background-color: #1C2C4E ;
+    height: 60px;
+    width: 100%;
+    color: rgb(229, 229, 229);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+}
+
+ 
+.barrascroll {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        height: 2600px;
+        background-color: rgb(231, 231, 231);
+
+        margin-top: 20px;
+
+}
+
+.not1{
+    height: 300px;
+
+    background-color: rgb(46, 70, 151); 
+    display: flex;
+    position: relative;
+}
 .sub-tit2{
     position: relative;
     top: 60px;
@@ -206,8 +278,78 @@ footer{
     cursor: pointer;
     color: #1C2C4E;
 
+ .noticia2 {
+    margin-bottom: 0;
+    margin-top: 25px;
+    height: 400px;
+    background-color: rgb(255, 255, 255);
+ }
+
+
+.not3{  
+    height: 400px;
+    width: 100%;
+    background-color: rgb(231, 231, 231);
+    margin-top: 25px;
+}
+
+ .noticia3 {
+    background-color: rgb(255, 255, 255);
+    height: 400px;
+    margin-top: 25px;
+
+    
+ }
+
+.not1, .noticia2, .noticia3{
+    width: 100%;
+    border-top: 1px solid rgb(102, 102, 102);
+    border-bottom: 1px solid rgb(102, 102, 102);
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+}
+
+
+
+ .not2, .not3, .not1{
+    
+    border-radius: 0px;
+    padding: 0;
+}
+
+ .foto {
+    margin: 0;
+    margin-top: 0;
+    border-radius: 0;
+    background-color: aqua;
+    height: 250px;
+    width: 100%;
+ }
+
+ .noticia1 {
+    height: 300px;
+    width: 100%;
+    background-image: url("/assets/img/imgpremicao.jpg");
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+    border-radius: 0;
+ }
+
+.noticia1:hover, .noticia2:hover, .noticia3:hover{
+    filter: brightness(100%);
+    transition: 0;
+    cursor: pointer;
+}
+
+footer{
+    background-color: #1C2C4E ;
+    height: 70px;
+    width: 100%;
+    color: rgb(229, 229, 229);
+    
 
 }
+
 
 .not1:hover{
     scale: 100px;
