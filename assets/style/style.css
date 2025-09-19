@@ -88,6 +88,7 @@ footer{
 
 
 .not1{
+    position: relative;
     grid-area: not1;
     border-radius: 20px;
     background-color: rgb(255, 0, 0); 
@@ -127,7 +128,41 @@ footer{
     width: 100%;
     height: 170px;
     background-color: red;
+    padding: 1rem 0;
+    color: #ffffff;
 
+
+}
+
+.roll-bar .rool-image{
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.roll-bar .imgs{
+    padding-left: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    width: max-content;
+
+    animation: scroll 25s linear infinite;
+}
+
+.roll-bar .imgs img{
+    height: 40px;
+    width: 100%;
+    filter: grayscale(1) opacity(0.7);
+    transition: all 0.3s ease;
+}
+
+
+@keyframes scroll {
+    to {
+        transform: translate(-50%);
+    }
 }
 .not2{
     grid-area: not2;
@@ -170,7 +205,7 @@ footer{
 }
  
 
- .foto {
+ .foto1, .foto2, .foto3 {
     margin: 20px;
     border-radius: 10px;
     background-color: aqua;
@@ -179,8 +214,20 @@ footer{
 
     transition: all 300ms ease-in-out;
  }
+ .foto1{
+    background-image: url(/assets/img/imagem4-\ núcleoneg.webp);
+    background-size: cover;
+ }
+ .foto2{
+    background-image: url(/assets/img/imagem_noticia\ \(1\).webp);
+    background-size: cover;
+ }
+ .foto3{
+    background-image: url(/assets/img/img.png);
+    background-size: cover;
+ }
 
-.foto:hover{
+.foto1:hover, .foto2:hover, .foto3:hover{
 
     cursor: pointer;
     background-color: blue;
@@ -204,7 +251,7 @@ footer{
 
 .t1:hover, .noticia2:hover{
     cursor: pointer;
-    color: #1C2C4E;
+    color: #4e1c1c;
 
 
 }
