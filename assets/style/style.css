@@ -6,16 +6,17 @@
     box-sizing: border-box;
 }
 
+
 body {   
     margin: 0;
     padding: 0;
     height: 100vh;
     width: 100vw;
-
     max-width: 100%;
 
     background-color: #fefefe;
     overflow-x: hidden;
+
 
 
 }
@@ -32,7 +33,6 @@ header {
     top: 0px;
     z-index: 2;
     font-size: 20px;
-
     font-family:Montserrat Alternates;
 
 }
@@ -103,6 +103,7 @@ footer .rodape-links a:hover {
     height: 100px;
     justify-content: center;
     align-items: center;
+
 }
 
 .logo-footer{
@@ -272,6 +273,7 @@ footer .rodape-links a:hover {
 
     transition: all 300ms ease-in-out;
  }
+
  .foto1{
     background-image: url(/assets/img/imagem4-\ núcleoneg.webp);
     background-size: cover;
@@ -301,6 +303,7 @@ footer .rodape-links a:hover {
  }
  
 
+
 .sub-tit2{
     position: relative;
     top: 60px;
@@ -320,4 +323,5 @@ footer .rodape-links a:hover {
                                           
 
 }
+
 
