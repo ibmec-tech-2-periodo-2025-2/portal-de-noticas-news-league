@@ -240,7 +240,11 @@ footer .rodape-links a:hover {
     
  }
 
-
+.noticia2 h2{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
 
  .noticia1 {
     position: relative;
