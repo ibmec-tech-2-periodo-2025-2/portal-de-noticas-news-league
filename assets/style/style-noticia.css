@@ -1,4 +1,6 @@
-/* Reset básico */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400;500;600;700&family=Lekton:ital,wght@0,400;0,700;1,400&family=Lexend+Exa:wght@100..900&family=Lexend+Giga:wght@100..900&family=Lexend+Zetta:wght@100..900&family=Lexend:wght@100..900&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
 * {
     margin: 0;
     padding: 0;
@@ -7,15 +9,14 @@
     box-sizing: border-box;
 }
 
-/* Estilo geral */
 body {
-    font-family: Arial, sans-serif;
+    font-family: Montserrat, sans-serif;
     line-height: 1.6;
     background-color: #f9f9f9;
     color: #333;
+    overflow-x: hidden;
 }
 
-/* Cabeçalho */
 header {
     background-color: #1C2C4E;
     color: #fff;
@@ -38,7 +39,7 @@ header nav ul li a:hover {
     color: #80cbc4;
 }
 
-/* Centralizar logo e textos no cabeçalho */
+
 .header-container {
     display: flex;
     align-items: center;
