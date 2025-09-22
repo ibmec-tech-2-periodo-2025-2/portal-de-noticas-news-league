@@ -1,0 +1,156 @@
+/* ===== BASE ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f4f6fa;
+  color: #333;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* ===== HEADER / FOOTER ===== */
+header {
+  background-color: #1c2c4e;
+  height: 120px;
+  width: 100%;
+  color: rgb(229, 229, 229);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+header .logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+nav a {
+  margin: 0 15px;
+  color: rgb(229, 229, 229);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+nav a:hover,
+nav a.active {
+  color: #ff4b5c;
+  font-weight: 600;
+}
+
+footer {
+  background-color: #1c2c4e;
+  color: rgb(229, 229, 229);
+  text-align: center;
+  padding: 40px 20px;
+  margin-top: 50px;
+}
+
+/* ===== HERO SOBRE ===== */
+.about-hero {
+  background: url("https://picsum.photos/1200/500?blur=2") center/cover no-repeat;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.about-overlay {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 40px 60px;
+  border-radius: 13px;
+  text-align: center;
+  color: white;
+}
+
+.about-overlay h1 {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+}
+
+/* ===== MISSÃO, VISÃO, VALORES ===== */
+.mvv {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+  max-width: 1100px;
+  margin: 50px auto;
+  padding: 0 20px;
+}
+
+.mvv-item {
+  background: #ffffff;
+  border-radius: 13px;
+  padding: 25px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.12);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.mvv-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.mvv-item h2 {
+  margin-bottom: 10px;
+  color: #1c2c4e;
+  font-size: 1.3rem;
+}
+
+/* ===== EQUIPE ===== */
+.team {
+  text-align: center;
+  margin: 70px auto;
+  max-width: 1100px;
+  padding: 0 20px;
+}
+
+.team h2 {
+  margin-bottom: 30px;
+  font-size: 2rem;
+  color: #1c2c4e;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+}
+
+.team-card {
+  background: #fff;
+  border-radius: 13px;
+  padding: 20px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s;
+}
+
+.team-card:hover {
+  transform: translateY(-5px);
+}
+
+.team-card img {
+  width: 100%;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.team-card h3 {
+  margin-bottom: 5px;
+  font-size: 1.2rem;
+  color: #1c2c4e;
+}
+
+.team-card p {
+  font-size: 0.95rem;
+  color: #555;
+}
