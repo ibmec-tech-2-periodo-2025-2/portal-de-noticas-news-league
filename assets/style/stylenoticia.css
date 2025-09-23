@@ -147,32 +147,7 @@ section {
     justify-content: center;
     align-items: center;
     height: 10vh;
-}
-
-footer.rodape {
-    background-color: #1D3C78; /* Cor de fundo do rodapé */
-    color: #fff; /* Cor do texto */
-    text-align: center;
-    padding: 1.5rem 0;
-    font-size: 0.9rem;
-}
-
-footer .rodape-links {
-    display: flex;
-    justify-content: center;
-    gap: 2rem; /* Espaçamento entre os links */
-    padding-left: 10px;
-}
-
-footer .rodape-links a {
-    color: #fff; /* Cor dos links */
-    text-decoration: none; /* Remove o sublinhado */
-    font-weight: bold;
-    transition: color 0.3s ease;
-}
-
-footer .rodape-links a:hover {
-    color: #797979; /* Cor ao passar o mouse */
+    flex-direction: column;
 }
 
 div{
@@ -199,4 +174,27 @@ img {
     height: auto; /* Mantém a proporção da imagem */
     border-radius: 8px; /* Adiciona bordas arredondadas às imagens */
     margin-top: 1rem;
+}
+
+nav a {
+  margin: 0 15px;
+  color: rgb(229, 229, 229);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+nav a:hover,
+nav a.active {
+  color: #ffb700;
+  font-weight: 600;
+}
+
+footer {
+  font-family: Montserrat;
+  background-color: #1c2c4e;
+  color: rgb(229, 229, 229);
+  text-align: center;
+  padding: 40px 20px;
+  margin-top: 50px;
+
 }
